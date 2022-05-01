@@ -9,7 +9,7 @@ with open('CCNA_DB.json') as f:
     
 print('Starting Automation using Telnetlib')
 
-tn = telnetlib.Telnet(data['cucm_fa0/0'])
+tn = telnetlib.Telnet(data['int_gi0/0/0'])
 
 tn.write(b'pass\n')
 tn.write(b'enable\n')
