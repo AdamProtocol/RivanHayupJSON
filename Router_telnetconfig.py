@@ -23,4 +23,9 @@ tn.write(ip_addr.encode('ascii') + b'\n')
 tn.write(b'no shutdown\n')
 tn.write(b'exit\n')
 
+de = tn.read_all().decode('ascii')
+print('AUTOMATION ENDED SHOWING YOU THE LOGS\n')
+print(de)
+
+
 
